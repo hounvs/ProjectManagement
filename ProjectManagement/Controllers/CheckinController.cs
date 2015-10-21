@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace ProjectManagement.Controllers
 {
-    public class CheckinController : Controller
+    public class CheckInController : Controller
     {
-        // GET: Checkin
+        // GET: CheckIn
         public ActionResult Index(string company)
         {
             switch(company.ToLower())
@@ -29,19 +29,19 @@ namespace ProjectManagement.Controllers
             return View();
         }
 
-        // GET: Checkin/Details/5
+        // GET: CheckIn/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Checkin/Create
+        // GET: CheckIn/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Checkin/Create
+        // POST: CheckIn/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -57,13 +57,13 @@ namespace ProjectManagement.Controllers
             }
         }
 
-        // GET: Checkin/Edit/5
+        // GET: CheckIn/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Checkin/Edit/5
+        // POST: CheckIn/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -79,13 +79,13 @@ namespace ProjectManagement.Controllers
             }
         }
 
-        // GET: Checkin/Delete/5
+        // GET: CheckIn/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Checkin/Delete/5
+        // POST: CheckIn/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
