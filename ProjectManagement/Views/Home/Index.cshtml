@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron text-center">
+    <div>
+        <h1>
+            Select your company
+        </h1>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        @Html.ActionImage("Index", "Checkin", new { company = "MoldPro" }, "~/Content/Images/MoldProLogo.jpg", new { @class = "home-logo" })
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        @Html.ActionImage("Index", "Checkin", new { company = "OTHS" }, "~/Content/Images/OTHSLogo.png", new { @class = "home-logo" })
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        @Html.ActionImage("Index", "Checkin", new { company = "OTR" }, "~/Content/Images/OTRLogo.jpg", new { @class = "home-logo" })
+    </div>
+</div>
